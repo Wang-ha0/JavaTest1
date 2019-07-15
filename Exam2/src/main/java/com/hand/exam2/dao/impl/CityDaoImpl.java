@@ -35,7 +35,7 @@ public class CityDaoImpl implements CityDao {
             while(resultSet.next()){
                 city = new City();
                 city.setCityId(resultSet.getInt(1));
-                city.setCity(resultSet.getString(1));
+                city.setCity(resultSet.getString(2));
                 cities.add(city);
             }
         } catch (Exception e) {
