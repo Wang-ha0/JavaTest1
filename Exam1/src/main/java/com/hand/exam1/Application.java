@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
 public class Application {
     public static void main(String[] args) {
         IntStream ints = new Random().ints(50, 1, 100);
-        ints.boxed().collect(Collectors.toMap(number);
+        List<Integer> integers = ints.boxed().collect(Collectors.toList());
 
 
     }
